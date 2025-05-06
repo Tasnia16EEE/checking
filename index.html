@@ -7,7 +7,12 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; scroll-behavior: smooth; }
     header { background: #111; color: #fff; padding: 1rem 2rem; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: #fff; margin: 0 1rem; text-decoration: none; }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    nav a { color: #fff; margin-left: 1rem; text-decoration: none; }
     section { padding: 4rem 2rem; max-width: 800px; margin: auto; }
     h2 { border-bottom: 1px solid #ccc; padding-bottom: 0.5rem; }
     footer { text-align: center; padding: 2rem; background: #f2f2f2; color: #333; }
@@ -25,9 +30,12 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Welcome</h2>
-    <p>Hello! I'm [Your Name], a [Your Title/Position] at [Institution]. Welcome to my personal website.</p>
+  <section style="display: flex; align-items: center; gap: 2rem;">
+    <img src="d7f2927c-9e2a-419b-8bd9-428d46e61afa.png" alt="Profile" style="width: 150px; border-radius: 8px;" />
+    <div>
+      <h2>Welcome</h2>
+      <p>Hello! I'm [Your Name], a [Your Title/Position] at [Institution]. Welcome to my personal website.</p>
+    </div>
   </section>
 
   <footer>
